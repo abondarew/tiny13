@@ -39,7 +39,7 @@
 // }
 int i = 0;
 int count = 100;
-int f = 24;
+int f = 34;
 bool out = true;
 bool isFirst = true;
 
@@ -219,13 +219,13 @@ int main(void)
   while (1)
   {
     // wait(f);
-    _delay_loop_1(f);
+    _delay_loop_2(f);
     if(out){
       if(isFirst){
         PORTB = 1 <<3;
         isFirst = false;
         //wait(f);
-        _delay_loop_1(f);
+        _delay_loop_2(f);
       }
       PORTB ^= 3 << 3;
     } else {
